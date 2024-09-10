@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles - ProBonoConnect</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .profile-section {
+            padding: 30px;
+            background-color: #f8f9fa;
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .submit-button, .schedule-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .submit-button:hover, .schedule-button:hover {
+            background-color: #218838;
+        }
+
+        .case-management, .appointment-scheduling, .pro-bono-history, .badges-reviews {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lawyer Profile Section -->
+    <section class="profile-section">
+        <h2>Lawyer Profile</h2>
+        <div class="lawyer-profile">
+            <form>
+                <h3>Profile Information</h3>
+                <label for="lawyer-name">Name:</label>
+                <input type="text" id="lawyer-name" placeholder="Lawyer's Name" required>
+                
+                <label for="lawyer-firm">Firm:</label>
+                <input type="text" id="lawyer-firm" placeholder="Firm (if applicable)">
+                
+                <label for="lawyer-expertise">Area of Expertise:</label>
+                <input type="text" id="lawyer-expertise" placeholder="Legal Expertise" required>
+
+                <label for="lawyer-location">Location:</label>
+                <input type="text" id="lawyer-location" placeholder="Location" required>
+
+                <h3>Available Cases</h3>
+                <ul id="available-cases-list">
+                    <!-- Cases submitted by clients will appear here -->
+                </ul>
+            </form>
+        </div>
+
+        <!-- Cases Undertaken Section -->
+        <div class="case-management">
+            <h3>Cases Undertaken</h3>
+            <ul id="cases-undertaken-list">
+                <!-- Cases accepted by the lawyer will appear here -->
+            </ul>
+        </div>
+    </section>
+    <script src="script_customer.js"></script>
+</body>
+</html>

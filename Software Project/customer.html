@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles - ProBonoConnect</title>
+    <link rel="stylesheet" href="styles_customer_lawyer.css">
+</head>
+ <!-- Client Profile Section -->
+ <section class="profile-section">
+    <h2>Client Profile</h2>
+    <div class="client-profile">
+        <form id="case-form">
+            <h3>Personal Information</h3>
+            <label for="client-name">Name:</label>
+            <input type="text" id="client-name" placeholder="Your Name" required>
+            
+            <label for="client-contact">Contact:</label>
+            <input type="email" id="client-contact" placeholder="Your Email" required>
+            
+            <label for="client-location">Location:</label>
+            <input type="text" id="client-location" placeholder="Your City" required>
+            
+            <h3>Case Submission Form</h3>
+            <label for="case-type">Case Type:</label>
+            <input type="text" id="case-type" placeholder="Type of Legal Help Needed" required>
+            
+            <label for="case-details">Case Details:</label>
+            <textarea id="case-details" placeholder="Provide details about your case" required></textarea>
+
+            <label for="case-docs">Upload Relevant Documentation:</label>
+            <input type="file" id="case-docs" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit" class="submit-button">Submit Case</button>
+        </form>
+    </div>
+
+    <!-- Case Management Section -->
+    <div class="case-management">
+        <h3>Case Management Dashboard</h3>
+        <ul id="active-cases-list">
+            <!-- New active cases will be added here -->
+        </ul>
+
+        <h3>Pending Cases</h3>
+        <ul id="pending-cases-list">
+            <!-- Cases accepted by the lawyer will be moved here -->
+        </ul>
+    </div>
+
+    <div class="appointment-scheduling">
+        <h3>Schedule an Appointment</h3>
+        <label for="appointment-date">Choose a date:</label>
+        <input type="date" id="appointment-date" required>
+        <button class="schedule-button">Request Appointment</button>
+    </div>
+</section>
+<script src="script_customer.js"></script>
+</body>
+</html>

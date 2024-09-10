@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.intro-banner {
+    background-color: #021c39;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro-banner h1 {
+    font-size: 3rem;
+}
+
+.intro-banner p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.search-bar {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+.stats-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.stat-item {
+    margin: 0 20px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #007BFF;
+}
+
+.testimonial-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.testimonials {
+    margin-top: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.partner-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.partners img {
+    margin: 10px;
+    width: 150px;
+}
+
